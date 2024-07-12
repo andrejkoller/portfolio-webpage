@@ -1,0 +1,141 @@
+:host {
+  display: flex;
+  height: 92vh;
+  width: 100%;
+
+  @media all and (max-width: 947px) {
+    .introduction-container .introduction-content {
+      .grid-one {
+        display: flex;
+        justify-content: flex-start;
+        p {
+          font-size: 1.6em;
+          width: 80%;
+        }
+      }
+
+      .grid-two {
+        .introduction-title {
+          font-size: 8em;
+        }
+
+        .keyword-description {
+          height: 8em;
+
+          div {
+            justify-content: flex-start;
+          }
+        }
+      }
+    }
+  }
+
+  @media all and (max-width: 512px) {
+    .introduction-container .introduction-content {
+      .grid-one {
+        display: flex;
+        justify-content: flex-start;
+        p {
+          font-size: 1.2em !important;
+          width: 80%;
+        }
+      }
+
+      .grid-two {
+        .introduction-title {
+          font-size: 4em !important;
+        }
+
+        .keyword-description {
+          height: 6em !important;
+        }
+      }
+    }
+  }
+
+  @media all and (max-width: 320px) {
+    .introduction-container .introduction-content {
+      .grid-two {
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-end;
+      }
+    }
+  }
+
+  .introduction-container {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+  }
+
+  .introduction-content {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    width: 100%;
+    height: 100%;
+    padding: 0 42px;
+  }
+
+  .grid-one {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    p {
+      display: flex;
+      align-items: flex-start;
+      grid-column: 2;
+      margin-top: 120px;
+      margin-bottom: 0px;
+      font-size: 2em;
+      width: 80%;
+      cursor: default;
+    }
+  }
+
+  .grid-two {
+    display: flex;
+    align-items: flex-end;
+
+    .introduction-title {
+      margin: 0;
+      font-size: 10em;
+      cursor: default;
+      text-decoration: none;
+      color: var(--mat-app-text-color);
+    }
+
+    .introduction-title span {
+      position: relative;
+      animation: moveLetters 2s 1 forwards;
+    }
+
+    @keyframes moveLetters {
+      from {
+        bottom: -10vw;
+      }
+      to {
+        bottom: 0;
+      }
+    }
+
+    .keyword-description {
+      display: flex;
+      flex-direction: column;
+      height: 10em;
+      justify-content: center;
+      font-size: 1.3em;
+      cursor: default;
+
+      .key-connector {
+        justify-content: flex-start;
+      }
+
+      div {
+        display: flex;
+        justify-content: flex-end;
+      }
+    }
+  }
+}

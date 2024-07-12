@@ -1,1 +1,33 @@
-/* You can add global styles to this file, and also import other style files */
+
+@use "./app/theme/theme_settings";
+@use "./app/theme/var";
+@import "./app/theme/theme_settings";
+@import "./app/theme/var";
+
+@font-face {
+  font-family: montserrat;
+  src: url(assets/fonts/Montserrat/Montserrat-VariableFont_wght.ttf);
+}
+
+html,
+body,
+app-root {
+  min-height: 100vh;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "montserrat", sans-serif !important;
+  scroll-behavior: smooth;
+  overflow-y: auto;
+}
+
+
+::selection {
+  background-color: var(--mat-app-text-color);
+  color:  var(--mat-app-background-color);
+}
+
+::-webkit-scrollbar {
+  display: none;
+}

@@ -1,0 +1,255 @@
+:host {
+  display: flex;
+  height: 92vh;
+  width: 100%;
+
+  @media all and (max-width: 1423px) {
+    .work-container {
+      padding: 0 !important;
+
+      .work-title {
+        font-size: 6em !important;
+      }
+
+      .work-content {
+        display: flex !important;
+        flex-direction: column !important;
+
+        .work-visuals {
+          justify-content: center;
+        }
+      }
+    }
+  }
+
+  @media all and (max-width: 947px) {
+    .work-container {
+      .work-content {
+        .work-visuals {
+          .work-vis-one img {
+            height: calc(500px / 1.5) !important;
+            width: calc(888.88px / 1.5) !important;
+          }
+
+          .work-vis-two img {
+            height: calc(500px / 1.5) !important;
+            width: calc(888.88px / 1.5) !important;
+          }
+
+          .work-vis-three img {
+            height: calc(500px / 1.5) !important;
+            width: calc(888.88px / 1.5) !important;
+          }
+        }
+      }
+
+      .con-links {
+        .cv-download {
+          a {
+            font-size: 4em !important;
+          }
+        }
+
+        .git-link {
+          a {
+            font-size: 4em !important;
+          }
+        }
+      }
+    }
+  }
+
+  @media all and (max-width: 512px) {
+    .work-container {
+      .work-title {
+        font-size: 3.5em !important;
+      }
+      .work-content {
+        .work-description {
+          .work-desc-one {
+            width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+          }
+
+          .work-desc-two {
+            width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+          }
+
+          .work-desc-three {
+            width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+          }
+        }
+        .work-visuals {
+          .work-vis-one img {
+            height: calc(500px / 2.5) !important;
+            width: calc(888.88px / 2.5) !important;
+          }
+
+          .work-vis-two img {
+            height: calc(500px / 2.5) !important;
+            width: calc(888.88px / 2.5) !important;
+          }
+
+          .work-vis-three img {
+            height: calc(500px / 2.5) !important;
+            width: calc(888.88px / 2.5) !important;
+          }
+        }
+      }
+
+      .con-links {
+        .cv-download {
+          a {
+            font-size: 3em !important;
+          }
+        }
+
+        .git-link {
+          a {
+            font-size: 3em !important;
+          }
+        }
+      }
+    }
+  }
+
+  .work-container {
+    height: 100%;
+    width: 100%;
+    padding: 0 42px;
+
+    .work-title {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      font-size: 10em;
+      box-shadow: 0 1px 0;
+      cursor: default;
+    }
+
+    .work-content {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4em;
+
+      .work-description {
+        display: grid;
+        grid-auto-rows: 1fr 1fr;
+        margin-top: 20px;
+        cursor: default;
+      }
+
+      .work-desc-one {
+        font-size: 1.5em;
+        text-align: justify;
+        line-height: 1.5em;
+        height: 500px;
+        margin-bottom: 40px;
+      }
+
+      .work-desc-two {
+        font-size: 1.5em;
+        text-align: justify;
+        line-height: 1.5em;
+        height: 500px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .work-desc-sub {
+          a {
+            text-decoration: none;
+            width: 100%;
+          }
+
+          button {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            padding: 12px 12px;
+            cursor: pointer;
+            background-color: transparent;
+            color: var(--mat-app-text-color);
+            border: none;
+            border-bottom: 1px solid;
+            text-align: right;
+            font-size: 1em;
+            transition: 0.25s ease-in;
+
+            &:hover {
+              background-color: var(--mat-app-text-color);
+              color: var(--mat-app-background-color);
+            }
+          }
+        }
+      }
+
+      .work-desc-three {
+        font-size: 1.5em;
+        text-align: justify;
+        line-height: 1.5em;
+        height: 500px;
+      }
+
+      .work-visuals {
+        display: grid;
+        grid-auto-rows: 1fr 1fr;
+        margin-top: 20px;
+
+        .work-vis-one img {
+          height: 500px;
+          width: 888.88px;
+          box-shadow: 1px 1px 5px 2px var(--mat-app-text-color);
+        }
+
+        .work-vis-two img {
+          height: 500px;
+          width: 888.88px;
+          box-shadow: 1px 1px 5px 2px var(--mat-app-text-color);
+        }
+
+        .work-vis-three img {
+          height: 500px;
+          width: 888.88px;
+          box-shadow: 1px 1px 5px 2px var(--mat-app-text-color);
+        }
+      }
+    }
+
+    .con-links {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+
+      .cv-download {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+
+        a {
+          text-decoration: none;
+          text-transform: uppercase;
+          color: var(--mat-app-text-color);
+          font-size: 5em;
+        }
+      }
+
+      .git-link {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+
+        a {
+          text-decoration: none;
+          text-transform: uppercase;
+          color: var(--mat-app-text-color);
+          font-size: 5em;
+        }
+      }
+    }
+  }
+}

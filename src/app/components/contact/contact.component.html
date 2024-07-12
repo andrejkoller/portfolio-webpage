@@ -1,0 +1,43 @@
+<div class="contact-container" *ngIf="hideComponentService.contactVisible">
+  <div class="contact-content">
+    <div class="grid-one">
+      <div class="contact-title">
+        <div>Wanna</div>
+        <div>connect</div>
+        <div>?</div>
+      </div>
+    </div>
+    <div class="grid-two">
+      <div class="contact-socials">
+        <div class="emails">
+          <a href="mailto:andrejkoller@outlook.com"
+            ><button>
+              <div>Email</div>
+              <div>{{ emailPersonal }}</div>
+            </button></a
+          >
+          <a href="https://linktr.ee/andrejkoller" target="_blank"
+            ><button>
+              <div>Linktree</div>
+              <div>{{ personal }}</div>
+            </button></a
+          >
+        </div>
+        <div class="socials">
+          <a href="mailto:fadinghell@outlook.com"
+            ><button>
+              <div>Email</div>
+              <div>{{ emailBand }}</div>
+            </button></a
+          >
+          <a href="https://linktr.ee/fadinghell" target="_blank"
+            ><button>
+              <div>Linktree</div>
+              <div>{{ band }}</div>
+            </button></a
+          >
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

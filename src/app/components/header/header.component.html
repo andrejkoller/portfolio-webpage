@@ -1,0 +1,30 @@
+<div class="header-container" *ngIf="hideComponentService.headerVisible">
+  <div class="header-content">
+    <div class="grid-one">
+      <div
+        class="header-logo"
+        *ngIf="
+          router.url.startsWith('/work') ||
+          router.url.startsWith('/about') ||
+          router.url.startsWith('/contact')
+        "
+      >
+        <a href="/">Andrej</a>
+      </div>
+    </div>
+    <div class="grid-two">
+      <div class="header-anchor-links">
+        <a routerLink="/work" routerLinkActive="active-link">Work</a>
+        <a routerLink="/about" routerLinkActive="active-link">About</a>
+        <a routerLink="/contact" routerLinkActive="active-link">Contact</a>
+      </div>
+      <div class="header-theme-switcher">
+        <app-theme-switcher
+          #darkModeSwitch
+          (darkModeSwitched)="callSwitchMode($event)"
+          [isDarkMode]="themeService.isDarkMode"
+        ></app-theme-switcher>
+      </div>
+    </div>
+  </div>
+</div>
