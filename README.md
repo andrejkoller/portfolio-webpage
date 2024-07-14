@@ -39,7 +39,7 @@
 </div>
 <div align="left">
   <p>
-    Built this website with Angular .<br> 
+    Built this website with Angular.<br> 
     With this I became more familiar with Grid<br> 
     and Angular Animations.<br>
   </p>
