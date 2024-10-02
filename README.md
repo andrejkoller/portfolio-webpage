@@ -39,8 +39,6 @@
 </div>
 <div align="left">
   <p>
-    Built this website with Angular.<br> 
-    With this I became more familiar with Grid<br> 
-    and Angular Animations.<br>
+    I built this website using Angular, which enhanced my understanding of CSS Grid and Angular Animations.
   </p>
 </div>
