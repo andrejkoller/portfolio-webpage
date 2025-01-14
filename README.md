@@ -1,6 +1,14 @@
 <div align="left">
   <h1>Portfolio Webpage 🖼️📸</h1>
 </div>
+<div align="left">
+  <h3>ABOUT THIS PROJECT</h3>
+</div>
+<div align="left">
+  <p>
+    I built this website using Angular, which enhanced my understanding of CSS Grid and Angular Animations.
+  </p>
+</div>
 <div align="center">
   <div>
     <img src="https://github.com/user-attachments/assets/58e51f39-c289-4a6b-b540-995c00ad3f02">
@@ -33,12 +41,4 @@
   <div>
     <img src="https://github.com/user-attachments/assets/3bdef9ee-692c-49a8-81ae-2832e59e7629">
   </div>
-</div>
-<div align="left">
-  <h3>ABOUT THIS PROJECT</h3>
-</div>
-<div align="left">
-  <p>
-    I built this website using Angular, which enhanced my understanding of CSS Grid and Angular Animations.
-  </p>
 </div>
